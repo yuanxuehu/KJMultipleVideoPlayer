@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0743D2772768CC41EDAAB190 /* Pods_KJMultipleVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CA9413CC48451B7F18758E /* Pods_KJMultipleVideoPlayer.framework */; };
+		6836E06B2C78D92C00543D90 /* KJTXPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6836E06A2C78D92C00543D90 /* KJTXPlayerManager.m */; };
+		6836E06E2C79E8CB00543D90 /* KJPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6836E06D2C79E8CB00543D90 /* KJPlayerUtil.m */; };
+		689AABFE2C777A3300C5CE4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AABFD2C777A3300C5CE4F /* AppDelegate.m */; };
+		689AAC012C777A3300C5CE4F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC002C777A3300C5CE4F /* SceneDelegate.m */; };
+		689AAC042C777A3300C5CE4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC032C777A3300C5CE4F /* ViewController.m */; };
+		689AAC072C777A3300C5CE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689AAC052C777A3300C5CE4F /* Main.storyboard */; };
+		689AAC092C777A3500C5CE4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689AAC082C777A3500C5CE4F /* Assets.xcassets */; };
+		689AAC0C2C777A3500C5CE4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689AAC0A2C777A3500C5CE4F /* LaunchScreen.storyboard */; };
+		689AAC0F2C777A3500C5CE4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC0E2C777A3500C5CE4F /* main.m */; };
+		689AAC192C777A3500C5CE4F /* KJMultipleVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC182C777A3500C5CE4F /* KJMultipleVideoPlayerTests.m */; };
+		689AAC232C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC222C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.m */; };
+		689AAC252C777A3500C5CE4F /* KJMultipleVideoPlayerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC242C777A3500C5CE4F /* KJMultipleVideoPlayerUITestsLaunchTests.m */; };
+		689AAC362C777D8300C5CE4F /* KJAliPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC352C777D8300C5CE4F /* KJAliPlayerManager.m */; };
+		689AAC392C777E6500C5CE4F /* KJIJKPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC382C777E6500C5CE4F /* KJIJKPlayerManager.m */; };
+		689AAC3E2C7874CF00C5CE4F /* KJVideoPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC3D2C7874CF00C5CE4F /* KJVideoPlayerVC.m */; };
+		689AAC412C7875C500C5CE4F /* KJVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC402C7875C500C5CE4F /* KJVideoPlayerView.m */; };
+		689AAC442C7879D700C5CE4F /* KJPlayerLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC432C7879D700C5CE4F /* KJPlayerLogic.m */; };
+		689AAC562C78857D00C5CE4F /* IJKMediaFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AAC542C78857D00C5CE4F /* IJKMediaFramework.a */; };
+		689AAC582C78859F00C5CE4F /* IJKMediaFrameworkWithSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AAC552C78857D00C5CE4F /* IJKMediaFrameworkWithSSL.framework */; };
+		689AAC592C78859F00C5CE4F /* IJKMediaFrameworkWithSSL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 689AAC552C78857D00C5CE4F /* IJKMediaFrameworkWithSSL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		689AAC5F2C78C14F00C5CE4F /* preloadVideoDemo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 689AAC5E2C78C14F00C5CE4F /* preloadVideoDemo.mp4 */; };
+		689AAC622C78C3B800C5CE4F /* KJAVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC612C78C3B800C5CE4F /* KJAVPlayerManager.m */; };
+		689AAC652C78D15A00C5CE4F /* KJVLCPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689AAC642C78D15A00C5CE4F /* KJVLCPlayerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		689AAC152C777A3500C5CE4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689AABF12C777A3300C5CE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 689AABF82C777A3300C5CE4F;
+			remoteInfo = KJMultipleVideoPlayer;
+		};
+		689AAC1F2C777A3500C5CE4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689AABF12C777A3300C5CE4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 689AABF82C777A3300C5CE4F;
+			remoteInfo = KJMultipleVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		689AAC5A2C78859F00C5CE4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				689AAC592C78859F00C5CE4F /* IJKMediaFrameworkWithSSL.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		39CA9413CC48451B7F18758E /* Pods_KJMultipleVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJMultipleVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59884F147870332A5D66BF61 /* Pods-KJMultipleVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJMultipleVideoPlayer.release.xcconfig"; path = "Target Support Files/Pods-KJMultipleVideoPlayer/Pods-KJMultipleVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		6836E0692C78D92C00543D90 /* KJTXPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJTXPlayerManager.h; sourceTree = "<group>"; };
+		6836E06A2C78D92C00543D90 /* KJTXPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJTXPlayerManager.m; sourceTree = "<group>"; };
+		6836E06C2C79E8CB00543D90 /* KJPlayerUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJPlayerUtil.h; sourceTree = "<group>"; };
+		6836E06D2C79E8CB00543D90 /* KJPlayerUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJPlayerUtil.m; sourceTree = "<group>"; };
+		689AABF92C777A3300C5CE4F /* KJMultipleVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJMultipleVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		689AABFC2C777A3300C5CE4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		689AABFD2C777A3300C5CE4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		689AABFF2C777A3300C5CE4F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		689AAC002C777A3300C5CE4F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		689AAC022C777A3300C5CE4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		689AAC032C777A3300C5CE4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		689AAC062C777A3300C5CE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		689AAC082C777A3500C5CE4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		689AAC0B2C777A3500C5CE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		689AAC0D2C777A3500C5CE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689AAC0E2C777A3500C5CE4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		689AAC142C777A3500C5CE4F /* KJMultipleVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJMultipleVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		689AAC182C777A3500C5CE4F /* KJMultipleVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJMultipleVideoPlayerTests.m; sourceTree = "<group>"; };
+		689AAC1E2C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJMultipleVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		689AAC222C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJMultipleVideoPlayerUITests.m; sourceTree = "<group>"; };
+		689AAC242C777A3500C5CE4F /* KJMultipleVideoPlayerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJMultipleVideoPlayerUITestsLaunchTests.m; sourceTree = "<group>"; };
+		689AAC342C777D8300C5CE4F /* KJAliPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAliPlayerManager.h; sourceTree = "<group>"; };
+		689AAC352C777D8300C5CE4F /* KJAliPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAliPlayerManager.m; sourceTree = "<group>"; };
+		689AAC372C777E6500C5CE4F /* KJIJKPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJIJKPlayerManager.h; sourceTree = "<group>"; };
+		689AAC382C777E6500C5CE4F /* KJIJKPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJIJKPlayerManager.m; sourceTree = "<group>"; };
+		689AAC3C2C7874CF00C5CE4F /* KJVideoPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJVideoPlayerVC.h; sourceTree = "<group>"; };
+		689AAC3D2C7874CF00C5CE4F /* KJVideoPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJVideoPlayerVC.m; sourceTree = "<group>"; };
+		689AAC3F2C7875C500C5CE4F /* KJVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJVideoPlayerView.h; sourceTree = "<group>"; };
+		689AAC402C7875C500C5CE4F /* KJVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJVideoPlayerView.m; sourceTree = "<group>"; };
+		689AAC422C7879D700C5CE4F /* KJPlayerLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJPlayerLogic.h; sourceTree = "<group>"; };
+		689AAC432C7879D700C5CE4F /* KJPlayerLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJPlayerLogic.m; sourceTree = "<group>"; };
+		689AAC482C78857D00C5CE4F /* IJKFFMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKFFMonitor.h; sourceTree = "<group>"; };
+		689AAC492C78857D00C5CE4F /* IJKMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMediaPlayer.h; sourceTree = "<group>"; };
+		689AAC4A2C78857D00C5CE4F /* IJKNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKNotificationManager.h; sourceTree = "<group>"; };
+		689AAC4B2C78857D00C5CE4F /* IJKFFMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKFFMoviePlayerController.h; sourceTree = "<group>"; };
+		689AAC4C2C78857D00C5CE4F /* IJKMediaFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMediaFramework.h; sourceTree = "<group>"; };
+		689AAC4D2C78857D00C5CE4F /* IJKMediaModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMediaModule.h; sourceTree = "<group>"; };
+		689AAC4E2C78857D00C5CE4F /* IJKMPMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMPMoviePlayerController.h; sourceTree = "<group>"; };
+		689AAC4F2C78857D00C5CE4F /* IJKAVMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKAVMoviePlayerController.h; sourceTree = "<group>"; };
+		689AAC502C78857D00C5CE4F /* IJKKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKKVOController.h; sourceTree = "<group>"; };
+		689AAC512C78857D00C5CE4F /* IJKMediaPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMediaPlayback.h; sourceTree = "<group>"; };
+		689AAC522C78857D00C5CE4F /* IJKFFOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKFFOptions.h; sourceTree = "<group>"; };
+		689AAC532C78857D00C5CE4F /* IJKSDLGLViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLGLViewProtocol.h; sourceTree = "<group>"; };
+		689AAC542C78857D00C5CE4F /* IJKMediaFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = IJKMediaFramework.a; sourceTree = "<group>"; };
+		689AAC552C78857D00C5CE4F /* IJKMediaFrameworkWithSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFrameworkWithSSL.framework; sourceTree = "<group>"; };
+		689AAC5E2C78C14F00C5CE4F /* preloadVideoDemo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = preloadVideoDemo.mp4; sourceTree = "<group>"; };
+		689AAC602C78C3B800C5CE4F /* KJAVPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAVPlayerManager.h; sourceTree = "<group>"; };
+		689AAC612C78C3B800C5CE4F /* KJAVPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAVPlayerManager.m; sourceTree = "<group>"; };
+		689AAC632C78D15A00C5CE4F /* KJVLCPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJVLCPlayerManager.h; sourceTree = "<group>"; };
+		689AAC642C78D15A00C5CE4F /* KJVLCPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJVLCPlayerManager.m; sourceTree = "<group>"; };
+		E2FEB605547AA13F8819E9C7 /* Pods-KJMultipleVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJMultipleVideoPlayer.debug.xcconfig"; path = "Target Support Files/Pods-KJMultipleVideoPlayer/Pods-KJMultipleVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		689AABF62C777A3300C5CE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689AAC582C78859F00C5CE4F /* IJKMediaFrameworkWithSSL.framework in Frameworks */,
+				689AAC562C78857D00C5CE4F /* IJKMediaFramework.a in Frameworks */,
+				0743D2772768CC41EDAAB190 /* Pods_KJMultipleVideoPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689AAC112C777A3500C5CE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689AAC1B2C777A3500C5CE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184ED40C482C3446A4ABA7C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39CA9413CC48451B7F18758E /* Pods_KJMultipleVideoPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		689AABF02C777A3300C5CE4F = {
+			isa = PBXGroup;
+			children = (
+				689AABFB2C777A3300C5CE4F /* KJMultipleVideoPlayer */,
+				689AAC172C777A3500C5CE4F /* KJMultipleVideoPlayerTests */,
+				689AAC212C777A3500C5CE4F /* KJMultipleVideoPlayerUITests */,
+				689AABFA2C777A3300C5CE4F /* Products */,
+				789C1966B9EFC4B336C1C1D4 /* Pods */,
+				184ED40C482C3446A4ABA7C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		689AABFA2C777A3300C5CE4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				689AABF92C777A3300C5CE4F /* KJMultipleVideoPlayer.app */,
+				689AAC142C777A3500C5CE4F /* KJMultipleVideoPlayerTests.xctest */,
+				689AAC1E2C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		689AABFB2C777A3300C5CE4F /* KJMultipleVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC5B2C78A0DD00C5CE4F /* Resource */,
+				689AAC452C78853400C5CE4F /* Lib */,
+				689AAC312C777C6B00C5CE4F /* Class */,
+				689AABFC2C777A3300C5CE4F /* AppDelegate.h */,
+				689AABFD2C777A3300C5CE4F /* AppDelegate.m */,
+				689AABFF2C777A3300C5CE4F /* SceneDelegate.h */,
+				689AAC002C777A3300C5CE4F /* SceneDelegate.m */,
+				689AAC022C777A3300C5CE4F /* ViewController.h */,
+				689AAC032C777A3300C5CE4F /* ViewController.m */,
+				689AAC052C777A3300C5CE4F /* Main.storyboard */,
+				689AAC082C777A3500C5CE4F /* Assets.xcassets */,
+				689AAC0A2C777A3500C5CE4F /* LaunchScreen.storyboard */,
+				689AAC0D2C777A3500C5CE4F /* Info.plist */,
+				689AAC0E2C777A3500C5CE4F /* main.m */,
+			);
+			path = KJMultipleVideoPlayer;
+			sourceTree = "<group>";
+		};
+		689AAC172C777A3500C5CE4F /* KJMultipleVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC182C777A3500C5CE4F /* KJMultipleVideoPlayerTests.m */,
+			);
+			path = KJMultipleVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		689AAC212C777A3500C5CE4F /* KJMultipleVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC222C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.m */,
+				689AAC242C777A3500C5CE4F /* KJMultipleVideoPlayerUITestsLaunchTests.m */,
+			);
+			path = KJMultipleVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+		689AAC312C777C6B00C5CE4F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC322C777CF800C5CE4F /* VideoControl */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		689AAC322C777CF800C5CE4F /* VideoControl */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC3B2C78749600C5CE4F /* VideoView */,
+				689AAC3A2C78748100C5CE4F /* VideoUnit */,
+				689AAC332C777D4D00C5CE4F /* VideoManager */,
+				689AAC3C2C7874CF00C5CE4F /* KJVideoPlayerVC.h */,
+				689AAC3D2C7874CF00C5CE4F /* KJVideoPlayerVC.m */,
+			);
+			path = VideoControl;
+			sourceTree = "<group>";
+		};
+		689AAC332C777D4D00C5CE4F /* VideoManager */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC342C777D8300C5CE4F /* KJAliPlayerManager.h */,
+				689AAC352C777D8300C5CE4F /* KJAliPlayerManager.m */,
+				689AAC372C777E6500C5CE4F /* KJIJKPlayerManager.h */,
+				689AAC382C777E6500C5CE4F /* KJIJKPlayerManager.m */,
+				689AAC602C78C3B800C5CE4F /* KJAVPlayerManager.h */,
+				689AAC612C78C3B800C5CE4F /* KJAVPlayerManager.m */,
+				689AAC632C78D15A00C5CE4F /* KJVLCPlayerManager.h */,
+				689AAC642C78D15A00C5CE4F /* KJVLCPlayerManager.m */,
+				6836E0692C78D92C00543D90 /* KJTXPlayerManager.h */,
+				6836E06A2C78D92C00543D90 /* KJTXPlayerManager.m */,
+			);
+			path = VideoManager;
+			sourceTree = "<group>";
+		};
+		689AAC3A2C78748100C5CE4F /* VideoUnit */ = {
+			isa = PBXGroup;
+			children = (
+				6836E06C2C79E8CB00543D90 /* KJPlayerUtil.h */,
+				6836E06D2C79E8CB00543D90 /* KJPlayerUtil.m */,
+				689AAC422C7879D700C5CE4F /* KJPlayerLogic.h */,
+				689AAC432C7879D700C5CE4F /* KJPlayerLogic.m */,
+			);
+			path = VideoUnit;
+			sourceTree = "<group>";
+		};
+		689AAC3B2C78749600C5CE4F /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC3F2C7875C500C5CE4F /* KJVideoPlayerView.h */,
+				689AAC402C7875C500C5CE4F /* KJVideoPlayerView.m */,
+			);
+			path = VideoView;
+			sourceTree = "<group>";
+		};
+		689AAC452C78853400C5CE4F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC462C78854F00C5CE4F /* IJKPlayer */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		689AAC462C78854F00C5CE4F /* IJKPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC472C78857D00C5CE4F /* Headers */,
+				689AAC542C78857D00C5CE4F /* IJKMediaFramework.a */,
+				689AAC552C78857D00C5CE4F /* IJKMediaFrameworkWithSSL.framework */,
+			);
+			path = IJKPlayer;
+			sourceTree = "<group>";
+		};
+		689AAC472C78857D00C5CE4F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC482C78857D00C5CE4F /* IJKFFMonitor.h */,
+				689AAC492C78857D00C5CE4F /* IJKMediaPlayer.h */,
+				689AAC4A2C78857D00C5CE4F /* IJKNotificationManager.h */,
+				689AAC4B2C78857D00C5CE4F /* IJKFFMoviePlayerController.h */,
+				689AAC4C2C78857D00C5CE4F /* IJKMediaFramework.h */,
+				689AAC4D2C78857D00C5CE4F /* IJKMediaModule.h */,
+				689AAC4E2C78857D00C5CE4F /* IJKMPMoviePlayerController.h */,
+				689AAC4F2C78857D00C5CE4F /* IJKAVMoviePlayerController.h */,
+				689AAC502C78857D00C5CE4F /* IJKKVOController.h */,
+				689AAC512C78857D00C5CE4F /* IJKMediaPlayback.h */,
+				689AAC522C78857D00C5CE4F /* IJKFFOptions.h */,
+				689AAC532C78857D00C5CE4F /* IJKSDLGLViewProtocol.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		689AAC5B2C78A0DD00C5CE4F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				689AAC5E2C78C14F00C5CE4F /* preloadVideoDemo.mp4 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		789C1966B9EFC4B336C1C1D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2FEB605547AA13F8819E9C7 /* Pods-KJMultipleVideoPlayer.debug.xcconfig */,
+				59884F147870332A5D66BF61 /* Pods-KJMultipleVideoPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		689AABF82C777A3300C5CE4F /* KJMultipleVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689AAC282C777A3500C5CE4F /* Build configuration list for PBXNativeTarget "KJMultipleVideoPlayer" */;
+			buildPhases = (
+				F753880F643E9AE5D89059AF /* [CP] Check Pods Manifest.lock */,
+				689AABF52C777A3300C5CE4F /* Sources */,
+				689AABF62C777A3300C5CE4F /* Frameworks */,
+				689AABF72C777A3300C5CE4F /* Resources */,
+				689AAC5A2C78859F00C5CE4F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJMultipleVideoPlayer;
+			productName = KJMultipleVideoPlayer;
+			productReference = 689AABF92C777A3300C5CE4F /* KJMultipleVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		689AAC132C777A3500C5CE4F /* KJMultipleVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689AAC2B2C777A3500C5CE4F /* Build configuration list for PBXNativeTarget "KJMultipleVideoPlayerTests" */;
+			buildPhases = (
+				689AAC102C777A3500C5CE4F /* Sources */,
+				689AAC112C777A3500C5CE4F /* Frameworks */,
+				689AAC122C777A3500C5CE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689AAC162C777A3500C5CE4F /* PBXTargetDependency */,
+			);
+			name = KJMultipleVideoPlayerTests;
+			productName = KJMultipleVideoPlayerTests;
+			productReference = 689AAC142C777A3500C5CE4F /* KJMultipleVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		689AAC1D2C777A3500C5CE4F /* KJMultipleVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689AAC2E2C777A3500C5CE4F /* Build configuration list for PBXNativeTarget "KJMultipleVideoPlayerUITests" */;
+			buildPhases = (
+				689AAC1A2C777A3500C5CE4F /* Sources */,
+				689AAC1B2C777A3500C5CE4F /* Frameworks */,
+				689AAC1C2C777A3500C5CE4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689AAC202C777A3500C5CE4F /* PBXTargetDependency */,
+			);
+			name = KJMultipleVideoPlayerUITests;
+			productName = KJMultipleVideoPlayerUITests;
+			productReference = 689AAC1E2C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		689AABF12C777A3300C5CE4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					689AABF82C777A3300C5CE4F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					689AAC132C777A3500C5CE4F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 689AABF82C777A3300C5CE4F;
+					};
+					689AAC1D2C777A3500C5CE4F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 689AABF82C777A3300C5CE4F;
+					};
+				};
+			};
+			buildConfigurationList = 689AABF42C777A3300C5CE4F /* Build configuration list for PBXProject "KJMultipleVideoPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 689AABF02C777A3300C5CE4F;
+			productRefGroup = 689AABFA2C777A3300C5CE4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				689AABF82C777A3300C5CE4F /* KJMultipleVideoPlayer */,
+				689AAC132C777A3500C5CE4F /* KJMultipleVideoPlayerTests */,
+				689AAC1D2C777A3500C5CE4F /* KJMultipleVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		689AABF72C777A3300C5CE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689AAC0C2C777A3500C5CE4F /* LaunchScreen.storyboard in Resources */,
+				689AAC5F2C78C14F00C5CE4F /* preloadVideoDemo.mp4 in Resources */,
+				689AAC092C777A3500C5CE4F /* Assets.xcassets in Resources */,
+				689AAC072C777A3300C5CE4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689AAC122C777A3500C5CE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689AAC1C2C777A3500C5CE4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F753880F643E9AE5D89059AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KJMultipleVideoPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		689AABF52C777A3300C5CE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689AAC3E2C7874CF00C5CE4F /* KJVideoPlayerVC.m in Sources */,
+				689AAC392C777E6500C5CE4F /* KJIJKPlayerManager.m in Sources */,
+				689AAC412C7875C500C5CE4F /* KJVideoPlayerView.m in Sources */,
+				689AAC042C777A3300C5CE4F /* ViewController.m in Sources */,
+				689AAC652C78D15A00C5CE4F /* KJVLCPlayerManager.m in Sources */,
+				689AAC442C7879D700C5CE4F /* KJPlayerLogic.m in Sources */,
+				689AAC362C777D8300C5CE4F /* KJAliPlayerManager.m in Sources */,
+				689AABFE2C777A3300C5CE4F /* AppDelegate.m in Sources */,
+				689AAC0F2C777A3500C5CE4F /* main.m in Sources */,
+				689AAC622C78C3B800C5CE4F /* KJAVPlayerManager.m in Sources */,
+				689AAC012C777A3300C5CE4F /* SceneDelegate.m in Sources */,
+				6836E06B2C78D92C00543D90 /* KJTXPlayerManager.m in Sources */,
+				6836E06E2C79E8CB00543D90 /* KJPlayerUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689AAC102C777A3500C5CE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689AAC192C777A3500C5CE4F /* KJMultipleVideoPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689AAC1A2C777A3500C5CE4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689AAC252C777A3500C5CE4F /* KJMultipleVideoPlayerUITestsLaunchTests.m in Sources */,
+				689AAC232C777A3500C5CE4F /* KJMultipleVideoPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		689AAC162C777A3500C5CE4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 689AABF82C777A3300C5CE4F /* KJMultipleVideoPlayer */;
+			targetProxy = 689AAC152C777A3500C5CE4F /* PBXContainerItemProxy */;
+		};
+		689AAC202C777A3500C5CE4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 689AABF82C777A3300C5CE4F /* KJMultipleVideoPlayer */;
+			targetProxy = 689AAC1F2C777A3500C5CE4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		689AAC052C777A3300C5CE4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				689AAC062C777A3300C5CE4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		689AAC0A2C777A3500C5CE4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				689AAC0B2C777A3500C5CE4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		689AAC262C777A3500C5CE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		689AAC272C777A3500C5CE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		689AAC292C777A3500C5CE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FEB605547AA13F8819E9C7 /* Pods-KJMultipleVideoPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KJMultipleVideoPlayer/Lib/IJKPlayer",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KJMultipleVideoPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KJMultipleVideoPlayer/Lib/IJKPlayer",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.KJMultipleVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		689AAC2A2C777A3500C5CE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59884F147870332A5D66BF61 /* Pods-KJMultipleVideoPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KJMultipleVideoPlayer/Lib/IJKPlayer",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KJMultipleVideoPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KJMultipleVideoPlayer/Lib/IJKPlayer",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.KJMultipleVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		689AAC2C2C777A3500C5CE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.KJMultipleVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJMultipleVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KJMultipleVideoPlayer";
+			};
+			name = Debug;
+		};
+		689AAC2D2C777A3500C5CE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.KJMultipleVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJMultipleVideoPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KJMultipleVideoPlayer";
+			};
+			name = Release;
+		};
+		689AAC2F2C777A3500C5CE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.KJMultipleVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KJMultipleVideoPlayer;
+			};
+			name = Debug;
+		};
+		689AAC302C777A3500C5CE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.KJMultipleVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KJMultipleVideoPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		689AABF42C777A3300C5CE4F /* Build configuration list for PBXProject "KJMultipleVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689AAC262C777A3500C5CE4F /* Debug */,
+				689AAC272C777A3500C5CE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689AAC282C777A3500C5CE4F /* Build configuration list for PBXNativeTarget "KJMultipleVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689AAC292C777A3500C5CE4F /* Debug */,
+				689AAC2A2C777A3500C5CE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689AAC2B2C777A3500C5CE4F /* Build configuration list for PBXNativeTarget "KJMultipleVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689AAC2C2C777A3500C5CE4F /* Debug */,
+				689AAC2D2C777A3500C5CE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689AAC2E2C777A3500C5CE4F /* Build configuration list for PBXNativeTarget "KJMultipleVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689AAC2F2C777A3500C5CE4F /* Debug */,
+				689AAC302C777A3500C5CE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 689AABF12C777A3300C5CE4F /* Project object */;
+}

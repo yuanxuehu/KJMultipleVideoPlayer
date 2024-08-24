@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-KJMultipleVideoPlayer/Pods-KJMultipleVideoPlayer-frameworks.sh
+${PODS_ROOT}/AliPlayerSDK_iOS/AliyunPlayer.framework
+${PODS_ROOT}/AliPlayerSDK_iOS/alivcffmpeg.framework
+${PODS_ROOT}/AliPlayerSDK_iOS/AliyunMediaDownloader.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MobileVLCKit/MobileVLCKit.framework/MobileVLCKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TXLiteAVSDK_Player/TXSoundTouch.framework/TXSoundTouch
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TXLiteAVSDK_Player/TXFFmpeg.framework/TXFFmpeg
